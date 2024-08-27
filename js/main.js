@@ -7,10 +7,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             section.style.display = 'none';
         });
 
-        // Show the selected section
+        // Get the target section based on the href attribute
         const targetSection = document.querySelector(this.getAttribute('href'));
+
+        // Check if the target section exists
         if (targetSection) {
             targetSection.style.display = 'block';
+        } else {
+            console.error('Target section not found:', this.getAttribute('href'));
         }
     });
 });
