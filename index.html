@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General CSS for controlling image sizes */
+        .project-image {
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* Larger size specifically for the portfolio website images */
+        .portfolio-website-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for the contact buttons */
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            color: white;
+            background-color: #58CC02;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #45a502;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hide all sections by default */
+        section {
+            display: none;
+        }
+
+        /* Display the home section by default */
+        #home {
+            display: block;
+        }
+
+        /* Cuter CSS for styling the project sections */
+        .project {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f5f5f5;
+            border-radius: 16px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .project p {
+            color: #666;
+        }
+
+        .project a.project-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #58CC02;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: #e0ffe0;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a.project-link:hover {
+            background-color: #c0ffc0;
+        }
+
+        /* About Me Section Styling */
+        .about-me {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content */
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px; /* Set a max-width to center the box and prevent it from being too wide */
+        }
+
+        .about-me img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .about-me-content {
+            max-width: 600px;
+            text-align: left; /* Align text to the left for better readability */
+        }
+
+        .about-me h2 {
+            margin: 0 0 10px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .about-me .smaller-text {
+            font-size: 0.6em; /* Smaller text */
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Coding</a></li>
+                <li><a href="#law-cv">Law CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Nicolette's Portfolio</h1>
+        <p>Here's what I've been working on!</p>
+        <p>Fun Fact: I built the website you're using right now</p>
+
+        <!-- About Me Section -->
+        <div class="about-me">
+            <img src="images/myavatar" alt="Nicolette's Avatar"> <!-- Your avatar image -->
+            <div class="about-me-content">
+                <h2>About Me</h2>
+                <p class="small-text">Hi! I'm Nicolette. I'm mixed race, born and raised in London, UK, with a heritage that's half European French (my family is from the Alps on the border of France and Switzerland) and half African Mauritian (an island near Madagascar—she's an island girl!). I'm currently in my third year of Law LLB at the University of Warwick, a Russell Group university in the UK. While I'm passionate about coding for fun, my true interest lies in law. I also make unreleased music, enjoy solo traveling, and love to read.</p>
+                <p class="small-text">I am a former international cheerleader with Unity All Stars, and a fun fact about me is that I won prom queen in secondary school. In the summer, I work with my agency all over London as a Hostess, Bartender, Waitress, Barista, Chef Prep, Chef de Partie, Sales Staff, and Events Staff in places like Festivals, Chelsea Football Club, Google, Millwall Football Club, Hilton, 5-star restaurants, Sketch, and more!</p>
+                <p class="small-text">Check out my hospitality and retail CV, as well as my corporate CV, in the "CV" section of this website (which I coded just for you!). This website is just a creative outlet smiles in Gen Z :3</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Coding Portfolio</h2>
+        <p>Here are some of the projects I've worked on.</p>
+
+        <!-- Calculator Project -->
+        <div class="project">
+            <img src="images/calculator.png.50.40.png" alt="Calculator Project Screenshot" class="project-image">
+            <h3>Calculator Project</h3>
+            <p>This is a simple calculator application built using HTML, CSS, and JavaScript.</p>
+            <a href="file:///Users/nicolettejacqueline/Desktop/hobbies/coding%20projects%20fr/calculator%20/index.html" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <!-- Weather App Project -->
+        <div class="project">
+            <img src="images/weatherappimage" alt="Weather App Project Screenshot" class="project-image">
+            <h3>Weather App</h3>
+            <p>This is a weather application that shows the current weather for a given city, built using HTML, CSS, and JavaScript with an API.</p>
+            <a href="file:///Users/nicolettejacqueline/Desktop/hobbies/coding%20projects%20fr/whether%20app/index.html" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <!-- Portfolio Website Project -->
+        <div class="project">
+            <img src="images/stageoneofwebsitedev" alt="Portfolio Website Development Stage One" class="portfolio-website-image">
+            <img src="images/stagetwoofwebsitedev" alt="Portfolio Website Development Stage Two" class="portfolio-website-image">
+            <h3>Portfolio Website</h3>
+            <p>I built the website using HTML, CSS, and JavaScript, starting with the design and coding of the site's structure and content. To manage my code and track changes, I used Git, creating a repository on GitHub. After finishing the website, I committed my work and pushed it to GitHub. Finally, I deployed the website using GitHub Pages, making it accessible online.</p>
+            <p>The pictures above show the beginning stages of this website.</p>
+            <a href="https://nicolettedoescode.github.io/portfolio-website/" target="_blank" class="project-link">View Live Portfolio</a>
+        </div>
+
+        <!-- Expense Tracker Project -->
+        <div class="project">
+            <img src="images/expensetracker" alt="Expense Tracker Project Screenshot" class="project-image">
+            <h3>Expense Tracker</h3>
+            <p>This is an expense tracker application built using HTML, CSS, and JavaScript. It allows users to track their daily expenses, categorize them, and visualize spending habits.</p>
+            <p>Skills here include; file handling (saving and loading data), lists/dictionaries, loops.</p>
+            <a href="file:///Users/nicolettejacqueline/Desktop/expense-tracker/index.html" target="_blank" class="project-link">View Project</a>
+        </div>
+
+        <!-- Virtual Pet Game Project -->
+        <div class="project">
+            <img src="images/virtualpetgame" alt="Virtual Pet Game Project Screenshot" class="project-image">
+            <h3>Virtual Pet Game</h3>
+            <p>This is a Virtual Pet Game built using HTML, CSS, and JavaScript. It allows users to take care of a virtual pet by feeding, playing, and monitoring its health.</p>
+            <p>Skills here include; DOM manipulation, event handling, conditional logic, and integrating basic animation.</p>
+            <a href="file:///Users/nicolettejacqueline/Desktop/VirtualPetGame/index.html" target="_blank" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <section id="law-cv">
+        <h2>Law and Hospitality CV</h2>
+        <p>What has Nicolette been up to, we all wonder.</p>
+        <a href="https://docs.google.com/document/d/1Q7TNsoFKHwu01XwRR0rA2Erq_2nBjMJi/edit?usp=sharing&ouid=110547625729099021542&rtpof=true&sd=true" target="_blank" class="contact-button">Law/Corporate CV (PDF)</a>
+        <a href="https://docs.google.com/document/d/1iyqoQPGDEz_Hn4M_pDs2g5wdkrcNcfm9/edit?usp=sharing&ouid=110547625729099021542&rtpof=true&sd=true" target="_blank" class="contact-button">Hospitality and Retail CV (PDF)</a>
+        <a href="https://www.vinted.co.uk/member/103894533" target="_blank" class="contact-button">Vinted Seller Account</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me through the following channels.</p>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+          <span class="contact-button">Email: nicolettejacqueline123@gmail.com</span>
+          <a href="https://www.linkedin.com/in/nicolette-jacqueline-a1924a21b/" target="_blank" class="contact-button">LinkedIn: Nicolette Jacqueline</a>
+      </div>
+  </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show the selected section
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
