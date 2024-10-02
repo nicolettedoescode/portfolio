@@ -62,7 +62,6 @@ p {
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
 /* Styling for the project sections */
 .project {
     border: 1px solid #ddd;
@@ -184,8 +183,6 @@ p {
     transform: scale(1.02);
 }
 
-=======
->>>>>>> 1015aeea03150d4a403ee474a246d66e01191624
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul li {
@@ -200,7 +197,6 @@ p {
     section {
         padding: 40px 10px;
     }
-<<<<<<< HEAD
 
     /* Make the About Me section responsive */
     .about-me {
@@ -231,6 +227,4 @@ p {
     .cv-content {
         max-width: 100%;
     }
-=======
->>>>>>> 1015aeea03150d4a403ee474a246d66e01191624
 }
